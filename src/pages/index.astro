@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Newsletter from '../components/Newsletter';
+import CTA from '@/components/CTA';
+import Data from '@/components/Data';
+import Feature from '@/components/Feature';
+import Stats from '@/components/Stats';
+import ImageGridWithLinks from '../components/ImageGridWithLinks.astro';
+import ContactForm from '../components/ContactForm.astro';
+import CarouselComponent from '../components/carrousel';
+---
+
+<Layout title="Bienvenidos a Luis pulgar">
+    <div class="grid gap-4 relative">
+    <div class="absolute inset-0" style="background-image: linear-gradient(to top, rgba(33, 45, 64, 1), rgba(20, 33, 61, 0));"></div>
+    <div style="background-image: linear-gradient(to bottom right, #14213D 0%, #212D40 100%);">
+      <img class="h-auto max-w-full rounded-lg" src="/src/images/imagen-banner.png" alt="">
+    </div>
+  </div>
+
+<main class="bg-[#212D40] p-24">
+  <ImageGridWithLinks/>
+</main>
+
+<ContactForm/>
+
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    /* max-width: 60ch; */
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 2rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+  main img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+</style>
