@@ -18,8 +18,6 @@ import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-
-
 const products = [
   {
     name: 'Analytics',
@@ -69,11 +67,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              className="h-12 w-auto"
-              src="/src/images/Logo.png"
-              alt=""
-            />
+            <img className="h-12 w-auto" src="/src/images/Logo.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -88,42 +82,31 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex lg:flex-1 lg:gap-x-12 lg:justify-end">
-          <a
-            href="/profile"
-            className="font-semibold leading-6 text-gray-100"
-          >
+          <a href="/profile" className="font-semibold leading-6 text-gray-100">
             Perfil
           </a>
-          <a
-            href="/price"
-            className="font-semibold leading-6 text-gray-100"
-          >
+          <a href="/price" className="font-semibold leading-6 text-gray-100">
             Servicios
           </a>
-          <a
-            href="/contact"
-            className="font-semibold leading-6 text-gray-100"
-          >
+          <a href="/blog" className="font-semibold leading-6 text-gray-100">
             Blog
           </a>
-          <a
-            href="/blog"
-            className="font-semibold leading-6 text-gray-100"
-          >
+          <a href="/books" className="font-semibold leading-6 text-gray-100">
             Libros
           </a>
-          <a
-            href="/contact"
-            className=" font-semibold leading-6 text-gray-100"
-          >
+          <a href="/contact" className=" font-semibold leading-6 text-gray-100">
             Contacto
           </a>
-        <a
-          href="#"
-          className="flex items-center text-sm font-semibold leading-6 text-gray-100"
-        >
-          <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5 ml-1" aria-hidden="true" />
-        </a>
+          <a
+            href="#"
+            className="flex items-center text-sm font-semibold leading-6 text-gray-100"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="h-5 w-5 ml-1"
+              aria-hidden="true"
+            />
+          </a>
         </div>
       </nav>
       <Dialog
@@ -137,11 +120,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="/src/images/Logo.png"
-                alt=""
-              />
+              <img className="h-8 w-auto" src="/src/images/Logo.png" alt="" />
             </a>
             <button
               type="button"
@@ -155,7 +134,6 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-
                 <a
                   href="/#newsletter"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
@@ -187,11 +165,15 @@ export default function Header() {
                   Contacto
                 </a>
                 <a
-          href="#"
-          className="flex items-center text-sm font-semibold leading-6 text-gray-100"
-        >
-          <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5 ml-1" aria-hidden="true" />
-        </a>
+                  href="#"
+                  className="flex items-center text-sm font-semibold leading-6 text-gray-100"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="h-5 w-5 ml-1"
+                    aria-hidden="true"
+                  />
+                </a>
               </div>
             </div>
           </div>
