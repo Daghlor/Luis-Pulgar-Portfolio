@@ -4,7 +4,7 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Perfil Luis Pulgar">
-  <div class="container mx-auto px-10 lg:px-20">
+  <div class="container mx-auto px-10">
     <div class="flex flex-row">
       <!-- Contenido principal -->
       <div class="w-1/2 lg:w-1/2">
@@ -43,22 +43,32 @@ import Card from '../components/Card.astro';
       </div>
 
       <!-- Imagen de la persona -->
-      <div class="w-auto lg:w-1/2">
+      <div class="w-auto lg:w-1/2 flex justify-center pl-5">
         <img
           src="/src/images/perfil/luis1.JPG"
           alt="Imagen de perfil"
-          class="rounded-lg"
+          class="rounded-lg object-contain max-h-48 lg:max-h-full"
         />
         <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
       </div>
     </div>
 
-    <div class="flex flex-row pt-16 justify-center">
+    <div class="flex justify-center pt-5">
+      <h1 class="text-5xl font-bold relative pt-6">Carrera Profesional</h1>
+    </div>
+    <div class="flex flex-row pt-16">
+      <!-- Imagen de la persona -->
+      <div class="w-auto lg:w-1/2 flex justify-center pr-5">
+        <img
+          src="/src/images/perfil/luis2.JPG"
+          alt="Imagen de perfil"
+          class="rounded-lg object-contain max-h-48 lg:max-h-full"
+        />
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
+      </div>
       <!-- Contenido principal -->
-
-      <!-- Información adicional -->
-      <div class="">
-        <div class="flex">
+      <div class="w-1/2 lg:w-1/2">
+        <div class="flex items-start">
           <img
             src="/src/images/perfil/puntos-carrera-profesional.png"
             alt="Imagen 1"
@@ -75,7 +85,7 @@ import Card from '../components/Card.astro';
             Novedades TV – Colombia (https://www.tvnovedadestv.com.co/).
           </p>
         </div>
-        <div class="flex my-24">
+        <div class="flex my-24 items-start">
           <img
             src="/src/images/perfil/puntos-carrera-profesional.png"
             alt="Imagen 2"
@@ -93,7 +103,7 @@ import Card from '../components/Card.astro';
             Consulting Group en Colombia (2016-2018)
           </p>
         </div>
-        <div class="flex my-24">
+        <div class="flex my-24 items-start">
           <img
             src="/src/images/perfil/puntos-carrera-profesional.png"
             alt="Imagen 3"

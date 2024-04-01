@@ -85,7 +85,7 @@ export default function Header() {
           <a href="/profile" className="font-semibold leading-6 text-gray-100">
             Perfil
           </a>
-          <a href="/price" className="font-semibold leading-6 text-gray-100">
+          <a href="/services" className="font-semibold leading-6 text-gray-100">
             Servicios
           </a>
           <a href="/blog" className="font-semibold leading-6 text-gray-100">

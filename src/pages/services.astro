@@ -1,0 +1,219 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
+---
+
+<Layout title="services">
+  <div class="container mx-auto px-10">
+    <h1
+      class="text-5xl font-bold text-center mt-8 relative"
+      style="color: #FCA311;"
+    >
+      SERVICIOS
+    </h1>
+
+    <div class="flex flex-row pt-20">
+      <!-- Contenido principal -->
+      <div class="w-1/2 lg:w-1/2 pr-5 content-center">
+        <h2 class="font-semibold pt-4 text-5xl pb-9" style="color: #FCA311">
+          Formación y Mentoría
+        </h2>
+        <p class="text-2xl">
+          Para desarrollar de manera acelerada las capacidades de los líderes y
+          directivos de las organizaciones o posicionar a Recursos Humanos como
+          actor principal en los equipos directivos y de alto valor agregado al
+          negocio mediante la metodología de 8 pasos “verdadero BusinesPartner”.
+        </p>
+      </div>
+
+      <!-- Imagen de la persona -->
+      <div class="w-auto lg:w-1/2 flex justify-center pl-5">
+        <img
+          src="/src/images/servicios/formacion-y-mentoria.jpg"
+          alt="Imagen de perfil"
+          class="rounded-lg object-contain max-h-48 lg:max-h-full"
+        />
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-row pt-5">
+      <!-- Contenido principal -->
+      <div class="w-auto lg:w-1/2 flex justify-center pl-5">
+        <img
+          src="/src/images/servicios/asesoria-y-consultoria.jpg"
+          alt="Imagen de perfil"
+          class="rounded-lg object-contain max-h-48 lg:max-h-full"
+        />
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
+      </div>
+      <div class="w-1/2 lg:w-1/2 pl-16 content-center">
+        <h2 class="font-semibold pt-4 text-5xl pb-9" style="color: #FCA311">
+          Asesoría y Consultoría
+        </h2>
+        <p class="text-2xl">
+          Asistencia para el diseño y despliegue planes estratégicos efectivos y
+          proyectos de transformación organizacional para potenciar la
+          productividad y agilidad de las empresas y el máximo aprovechamiento
+          del talento de la organización.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row pt-5">
+      <!-- Contenido principal -->
+      <div class="w-1/2 lg:w-1/2 pl-16 content-center">
+        <h2 class="font-semibold pt-4 text-5xl pb-9" style="color: #FCA311">
+          Board Advisory
+        </h2>
+        <p class="text-2xl">
+          Participación como miembro externo de juntas directivas y comités
+          ejecutivos para servir como caja de resonancia y consejero de CEOs,
+          directivos, ejecutivos en funciones.
+        </p>
+      </div>
+      <div class="w-auto lg:w-1/2 flex justify-center pl-5">
+        <img
+          src="/src/images/servicios/board.jpg"
+          alt="Imagen de perfil"
+          class="rounded-lg object-contain max-h-48 lg:max-h-full"
+        />
+        <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap">
+      <!-- Tarjetas arriba -->
+      <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <a
+          href="#"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/RH.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la primera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold" style="color: #11151C">RH</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <a
+          href="#"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/liderazgo.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la segunda tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold" style="color: #11151C">Liderazgo</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/3 p-4">
+        <a
+          href="#"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/Estrategia.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la tercera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold" style="color: #11151C">Estrategia</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tarjetas abajo centradas -->
+      <div class="w-full flex justify-center">
+        <div class="w-full sm:w-auto p-4">
+          <!-- Ajuste en sm:w-auto para que las tarjetas sean del ancho que necesiten -->
+          <a
+            href="#"
+            class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+          >
+            <div class="bg-white rounded-t-lg overflow-hidden">
+              <img
+                src="/src/images/servicios/cultura-organizacional.jpg"
+                alt="Imagen de la tarjeta"
+                class="w-full h-64 object-cover"
+              />
+              <!-- Contenido de la cuarta tarjeta -->
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end"
+              style="background-color: #FCA311"
+            >
+              <p class="font-semibold" style="color: #11151C">
+                Cultura Organizacional
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full sm:w-auto p-4">
+          <!-- Ajuste en sm:w-auto para que las tarjetas sean del ancho que necesiten -->
+          <a
+            href="#"
+            class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+          >
+            <div class="bg-white rounded-t-lg overflow-hidden">
+              <img
+                src="/src/images/servicios/gerencia.jpg"
+                alt="Imagen de la tarjeta"
+                class="w-full h-64 object-cover"
+              />
+              <!-- Contenido de la quinta tarjeta -->
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end"
+              style="background-color: #FCA311"
+            >
+              <p class="font-semibold" style="color: #11151C">Gerencia</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <ContactForm />
+  </div>
+</Layout>
+
+<style>
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 420px;
+    bottom: -50px;
+    width: 30%;
+    height: 10px; /* Ajusta el valor para el grosor del subrayado */
+    background-color: #fca311; /* Cambia el color del subrayado aquí */
+  }
+</style>
