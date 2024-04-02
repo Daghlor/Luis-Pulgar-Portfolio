@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev --host",
-    "build": "astro check && tsc --noEmit && astro build",
+    "build": "astro check && tsc --noEmit && astro build --output-dir=dist",
     "preview": "astro preview",
     "prettier": "prettier --write ./src",
     "astro": "astro",
