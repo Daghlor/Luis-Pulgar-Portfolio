@@ -98,7 +98,7 @@ export default function Header() {
             Contacto
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/luispulgarfinolconsultor/"
             className="flex items-center text-sm font-semibold leading-6 text-gray-100"
           >
             <FontAwesomeIcon

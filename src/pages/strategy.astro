@@ -1,0 +1,160 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Servicios">
+  <div class="container mx-auto px-10">
+    <h1
+      class="text-5xl font-bold text-center mt-8 relative"
+      style="color: #FCA311;"
+    >
+      ESTRATEGIA
+    </h1>
+
+    <div class="flex flex-wrap -mx-4 mt-24">
+      <div class="w-full sm:w-1/2 px-4">
+        <img
+          src="/src/images/servicios/Estrategia/1.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4"
+        />
+        <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
+          Plan Estratégico de Una sola página – Metodología OGSM
+        </h2>
+        <p class="text-lg">
+          Visualizar el futuro de empresa con foco en un Objetivo claro y
+          específico que conjugue todo lo que se desea lograr. Traducir el
+          Objetivo en metas cuantitativas claras y alcanzables y establecer
+          estrategias (cursos de acción) específicos cuya sumatoria y sinergia
+          nos lleven al logro del Objetivo.
+        </p>
+      </div>
+      <div class="w-full sm:w-1/2 px-4 mt-4 sm:mt-0">
+        <img
+          src="/src/images/servicios/Estrategia/2.jpg"
+          alt="Imagen 2"
+          class="w-full mb-4"
+        />
+        <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
+          Manejo de la Adversidad
+        </h2>
+        <p class="text-lg">
+          Adquirir la capacidad de convertir los obstáculos en verdaderas
+          oportunidades, mediante movimientos, o combinaciones de patrones de
+          pensamiento, sentimiento y acción.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap pt-14">
+      <!-- Tarjetas arriba -->
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/OrganizationalCulture"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/cultura-organizacional.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la primera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-xl" style="color: #11151C">
+              Cultura Organizacional
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/gerency"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/gerencia.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la segunda tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Gerencia
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/rh"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/RH.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la tercera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Recursos Humanos
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/leadership"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/liderazgo.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la cuarta tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Liderazgo
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 420px;
+    bottom: -50px;
+    width: 30%;
+    height: 10px; /* Ajusta el valor para el grosor del subrayado */
+    background-color: #fca311; /* Cambia el color del subrayado aquí */
+  }
+</style>

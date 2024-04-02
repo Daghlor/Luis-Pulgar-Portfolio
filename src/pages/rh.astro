@@ -1,0 +1,144 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Servicios">
+  <div class="container mx-auto px-10">
+    <h1
+      class="text-5xl font-bold text-center mt-8 relative"
+      style="color: #FCA311;"
+    >
+      RECURSOS HUMANOS
+    </h1>
+
+    <div class="flex justify-center pt-16">
+      <img
+        src="/src/images/servicios/Recursos humanos/businessman-showing-changes-report.jpg"
+        alt=""
+        class="w-1/2 h-auto"
+      />
+    </div>
+
+    <div class="py-11">
+      <h2 class="flex justify text-xl font-bold" style="color: #FCA311;">
+        Los 8 pasos para ser un Verdadero Business Partner de Recursos Humanos
+      </h2>
+      <p class="text-lg">
+        Es la oportunidad para los directores o gerentes de RH de posicionarse
+        en sus equipos directivos como unos verdaderos activos que agregan valor
+        al negocio
+      </p>
+    </div>
+
+    <div class="flex flex-wrap pt-14">
+      <!-- Tarjetas arriba -->
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/leadership"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/liderazgo.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la primera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Liderazgo
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/strategy"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/Estrategia.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la segunda tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Estrategia
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/OrganizationalCulture"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/cultura-organizacional.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la tercera tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-xl" style="color: #11151C">
+              Cultura Organizacional
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+        <a
+          href="/gerency"
+          class="block max-w-sm border border-gray-200 rounded-lg shadow hover:bg-gray-100 relative"
+        >
+          <div class="bg-white rounded-t-lg overflow-hidden">
+            <img
+              src="/src/images/servicios/gerencia.jpg"
+              alt="Imagen de la tarjeta"
+              class="w-full h-64 object-cover"
+            />
+            <!-- Contenido de la cuarta tarjeta -->
+          </div>
+          <div
+            class="absolute bottom-0 left-0 w-full px-4 py-2 flex justify-center items-end rounded-t"
+            style="background-color: #FCA311"
+          >
+            <p class="font-semibold text-2xl" style="color: #11151C">
+              Gerencia
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1::after {
+    content: '';
+    position: absolute;
+    left: 420px;
+    bottom: -50px;
+    width: 30%;
+    height: 10px; /* Ajusta el valor para el grosor del subrayado */
+    background-color: #fca311; /* Cambia el color del subrayado aquí */
+  }
+</style>
