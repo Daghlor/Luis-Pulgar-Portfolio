@@ -7,7 +7,8 @@ import Feature from '@/components/Feature';
 import Stats from '@/components/Stats';
 import ImageGridWithLinks from '../components/ImageGridWithLinks.astro';
 import ContactForm from '../components/ContactForm.astro';
-import CarouselComponent from '../components/carrousel';
+import CarouselComponent from '../components/Carousel.astro';
+import Logos from '@/components/logos.astro';
 ---
 
 <Layout title="Luis pulgar">
@@ -31,6 +32,19 @@ import CarouselComponent from '../components/carrousel';
   <main class="bg-[#212D40] p-24">
     <ImageGridWithLinks />
   </main>
+
+  <div class="flex justify-center items-center">
+    <div
+      class="bg-[#212D40] rounded-lg p-4"
+      style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;"
+    >
+      <h2 class="text-5xl font-bold" style="color: #FCA311;">Clientes</h2>
+    </div>
+  </div>
+
+  <CarouselComponent />
+
+  <Logos />
 
   <ContactForm />
 </Layout>
