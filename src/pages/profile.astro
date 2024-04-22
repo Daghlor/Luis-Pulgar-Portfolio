@@ -1,23 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout title="Perfil Luis Pulgar">
-  <div class="container mx-auto px-10">
-    <div class="flex flex-row">
+  <div class="container mx-auto px-5 lg:px-10">
+    <div class="flex flex-col lg:flex-row">
       <!-- Contenido principal -->
-      <div class="w-1/2 lg:w-1/2">
+      <div class="w-auto lg:w-1/2">
         <h1 class="text-5xl font-bold relative pt-6">Luis E. Pulgar Finol</h1>
         <br />
-        <h3 class="text-2xl font-semibold pt-4">
+        <h3 class="text-2xl font-semibold pt-4 pb-8">
           Ejecutivo, consultor y emprendedor con mas de 35 años de experiencia
           Directiva y de Consultoría en altos niveles en Corporaciones
           Nacionales y Multinacionales de Latinoamérica Norteamérica y Europa.
         </h3>
-        <br />
-        <br />
-        <p class="text-lg">
+        <div class="lg:hidden flex justify-center">
+          <img
+            src="/src/images/perfil/luis1.JPG"
+            alt="Imagen de perfil"
+            class="rounded-lg object-contain max-h-48 lg:max-h-full"
+          />
+        </div>
+        <p class="text-lg pt-4 lg:pt-0">
           Consultor Internacional, reconocido por su competencia para potenciar
           la capacidad de las organizaciones para generar valor mediante la
           innovación y el cambio positivo. De su trabajo como consultor y asesor
@@ -43,7 +47,7 @@ import Card from '../components/Card.astro';
       </div>
 
       <!-- Imagen de la persona -->
-      <div class="w-auto lg:w-1/2 flex justify-center pl-5">
+      <div class="hidden lg:w-1/2 lg:flex justify-center lg:pl-5">
         <img
           src="/src/images/perfil/luis1.JPG"
           alt="Imagen de perfil"
@@ -56,9 +60,9 @@ import Card from '../components/Card.astro';
     <div class="flex justify-center pt-5">
       <h1 class="text-5xl font-bold relative pt-6">Carrera Profesional</h1>
     </div>
-    <div class="flex flex-row pt-16">
+    <div class="flex flex-col lg:flex-row pt-16">
       <!-- Imagen de la persona -->
-      <div class="w-auto lg:w-1/2 flex justify-center pr-5">
+      <div class="w-auto lg:w-1/2 flex justify-center lg:pr-5">
         <img
           src="/src/images/perfil/luis2.JPG"
           alt="Imagen de perfil"
@@ -67,9 +71,9 @@ import Card from '../components/Card.astro';
         <div class="absolute bottom-0 left-0 w-full h-2 bg-fca311"></div>
       </div>
       <!-- Contenido principal -->
-      <div class="w-1/2 lg:w-1/2">
+      <div class="w-auto lg:w-1/2">
         <div class="flex items-start">
-          <p class="text-lg">
+          <p class="text-lg pt-5 lg:pt-0">
             Es Partner Advisor de la empresa Bonum Coaching
             (https://www.bonumcoaching.com/), con base en Florida, USA y ha
             trabajado como consultor experto para Arthur D. Little en Recursos
@@ -119,11 +123,12 @@ import Card from '../components/Card.astro';
       </p>
     </div>
 
-    <div class="flex justify-center">
+    <div class="flex flex-col lg:flex-row justify-between mb-20">
       <div
-        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-200 mr-20"
+        class="w-full lg:max-w-2xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-200"
       >
-        <div class="p-5">
+        <div class="p-5 mx-auto grid justify-center">
+          <!-- Aplicamos mx-auto aquí para centrar el contenido -->
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-center">
             Trayectoria académica
           </h5>
@@ -151,9 +156,10 @@ import Card from '../components/Card.astro';
         </div>
       </div>
       <div
-        class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-200"
+        class="w-full lg:max-w-2xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-200"
       >
-        <div class="p-5">
+        <div class="p-5 mx-auto grid justify-center">
+          <!-- Aplicamos mx-auto aquí para centrar el contenido -->
           <h5 class="mb-2 text-2xl font-bold tracking-tight text-center">
             Otros aspectos de interés
           </h5>

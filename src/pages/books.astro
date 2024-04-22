@@ -3,22 +3,20 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Libros Luis Pulgar">
-  <div class="container mx-auto px-10">
-    <h1
-      class="text-5xl font-bold text-center mt-8 relative"
-      style="color: #FCA311;"
-    >
+  <div class="container mx-auto px-5 lg:px-10">
+    <h1 class="text-5xl font-bold text-center mt-8" style="color: #FCA311;">
       LIBROS
     </h1>
-    <div class="flex flex-col mt-24 sm:flex-row">
-      <div class="relative w-full sm:w-1/2 mb-6 sm:mb-0">
+    <div class="flex flex-col mt-8 lg:mt-24 sm:flex-row">
+      <div class="relative sm:w-1/2 mb-6 sm:mb-0 hidden lg:flex">
         <img
           src="/src/images/libros/libro.jpg"
           alt="Descripción de la imagen"
           class="w-full mb-6 sm:mb-0"
         />
         <a
-          href="https://www.amazon.com/Verdadero-Business-Partner-recursos-aut%C3%A9ntico-ebook/dp/B098R8Q6JY#customerReviews" target="_blank"
+          href="https://www.amazon.com/Verdadero-Business-Partner-recursos-aut%C3%A9ntico-ebook/dp/B098R8Q6JY#customerReviews"
+          target="_blank"
         >
           <button
             class="absolute bottom-0 right-0 px-4 py-2 rounded-full font-bold"
@@ -28,10 +26,28 @@ import Layout from '@/layouts/Layout.astro';
           >
         </a>
       </div>
-      <div class="w-full sm:w-1/2 pl-8">
+      <div class="w-full sm:w-1/2 lg:pl-8">
         <h2 class="text-3xl font-bold text-center mb-9">
           Verdadero Business Partner
         </h2>
+        <div class="relative w-full sm:w-1/2 mb-6 sm:mb-0 lg:hidden flex">
+          <img
+            src="/src/images/libros/libro.jpg"
+            alt="Descripción de la imagen"
+            class="w-full mb-6 sm:mb-0"
+          />
+          <a
+            href="https://www.amazon.com/Verdadero-Business-Partner-recursos-aut%C3%A9ntico-ebook/dp/B098R8Q6JY#customerReviews"
+            target="_blank"
+          >
+            <button
+              class="absolute bottom-6 right-0 px-4 py-2 rounded-full font-bold"
+              style="background-color: #FCA311;
+              color: #11151C;"
+              >Comprar</button
+            >
+          </a>
+        </div>
         <p class="mb-10 text-lg">
           Si hay una aspiración compartida por los profesionales de Recursos
           Humanos en cualquier parte del mundo, sin duda es la de convertirse en
@@ -102,15 +118,3 @@ import Layout from '@/layouts/Layout.astro';
     </div>
   </div>
 </Layout>
-
-<style>
-  h1::after {
-    content: '';
-    position: absolute;
-    left: 420px;
-    bottom: -50px;
-    width: 30%;
-    height: 10px; /* Ajusta el valor para el grosor del subrayado */
-    background-color: #fca311; /* Cambia el color del subrayado aquí */
-  }
-</style>

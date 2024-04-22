@@ -61,7 +61,7 @@ export default function Header() {
   return (
     <header className="bg-[#11151C] z-50">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-8xl items-center justify-between p-6 lg:px-52"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -100,6 +100,7 @@ export default function Header() {
           <a
             href="https://www.linkedin.com/in/luispulgarfinolconsultor/"
             className="flex items-center text-sm font-semibold leading-6 text-gray-100"
+            target="blank"
           >
             <FontAwesomeIcon
               icon={faLinkedin}
@@ -135,31 +136,31 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a
-                  href="/#newsletter"
+                  href="/profile"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                 >
                   Perfil
                 </a>
                 <a
-                  href="/price"
+                  href="/services"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                 >
                   Servicios
                 </a>
                 <a
-                  href="/contact"
+                  href="/blog"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                 >
                   Blog
                 </a>
                 <a
-                  href="/blog"
+                  href="/books"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                 >
                   Libros
                 </a>
                 <a
-                  href="/blog"
+                  href="/contact"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-100 hover:bg-gray-50"
                 >
                   Contacto

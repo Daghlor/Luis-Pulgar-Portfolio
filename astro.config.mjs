@@ -13,7 +13,7 @@ export default defineConfig({
   //   mode: 'standalone'
   // }),
   adapter: vercel({
-    analytics: true
+     mode: 'standalone'
   }),
   integrations: [react(), tailwind()],
   markdown: {

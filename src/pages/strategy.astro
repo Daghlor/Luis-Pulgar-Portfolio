@@ -3,24 +3,26 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Servicios">
-  <div class="container mx-auto px-10">
-    <h1
-      class="text-5xl font-bold text-center mt-8 relative"
-      style="color: #FCA311;"
-    >
+  <div class="container mx-auto px-5 lg:px-10">
+    <h1 class="text-5xl font-bold text-center mt-8" style="color: #FCA311;">
       ESTRATEGIA
     </h1>
 
-    <div class="flex flex-wrap -mx-4 mt-24">
+    <div class="flex flex-wrap -mx-4 mt-8 lg:mt-24">
       <div class="w-full sm:w-1/2 px-4">
         <img
           src="/src/images/servicios/Estrategia/1.jpg"
           alt="Imagen 1"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Plan Estratégico de Una sola página – Metodología OGSM
         </h2>
+        <img
+          src="/src/images/servicios/Estrategia/1.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Visualizar el futuro de empresa con foco en un Objetivo claro y
           específico que conjugue todo lo que se desea lograr. Traducir el
@@ -33,11 +35,16 @@ import Layout from '@/layouts/Layout.astro';
         <img
           src="/src/images/servicios/Estrategia/2.jpg"
           alt="Imagen 2"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Manejo de la Adversidad
         </h2>
+        <img
+          src="/src/images/servicios/Estrategia/2.jpg"
+          alt="Imagen 2"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Adquirir la capacidad de convertir los obstáculos en verdaderas
           oportunidades, mediante movimientos, o combinaciones de patrones de
@@ -146,15 +153,3 @@ import Layout from '@/layouts/Layout.astro';
     </div>
   </div>
 </Layout>
-
-<style>
-  h1::after {
-    content: '';
-    position: absolute;
-    left: 420px;
-    bottom: -50px;
-    width: 30%;
-    height: 10px; /* Ajusta el valor para el grosor del subrayado */
-    background-color: #fca311; /* Cambia el color del subrayado aquí */
-  }
-</style>

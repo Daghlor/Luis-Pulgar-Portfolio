@@ -19,3 +19,9 @@ document.getElementById('prevBtn').addEventListener('click', function () {
 document.getElementById('nextBtn').addEventListener('click', function () {
   changeSlide(1);
 });
+
+// Cambiar automáticamente las imágenes cada cierto intervalo de tiempo
+const interval = 4000; // Intervalo en milisegundos (3 segundos en este caso)
+setInterval(function () {
+  changeSlide(1); // Cambiar a la siguiente imagen
+}, interval);

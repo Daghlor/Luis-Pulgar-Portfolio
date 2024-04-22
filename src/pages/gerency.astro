@@ -3,24 +3,26 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Servicios">
-  <div class="container mx-auto px-10">
-    <h1
-      class="text-5xl font-bold text-center mt-8 relative"
-      style="color: #FCA311;"
-    >
+  <div class="container mx-auto px-5 lg:px-10">
+    <h1 class="text-5xl font-bold text-center mt-8" style="color: #FCA311;">
       GERENCIA
     </h1>
 
-    <div class="flex flex-wrap -mx-4 mt-24">
+    <div class="flex flex-wrap -mx-4 mt-8 lg:mt-24">
       <div class="w-full sm:w-1/2 px-4">
         <img
           src="/src/images/servicios/Gerencia/1.jpg"
           alt="Imagen 1"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Tópicos Gerenciales en tiempos volátiles, ambiguos e inciertos
         </h2>
+        <img
+          src="/src/images/servicios/Gerencia/1.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Ya superada la pandemia debemos aprender cómo apalancarnos en los
           aprendizajes que nos dejó la crisis para superar los retos de la
@@ -32,11 +34,16 @@ import Layout from '@/layouts/Layout.astro';
         <img
           src="/src/images/servicios/Gerencia/2.jpg"
           alt="Imagen 2"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           La Seguridad Psicológica en el Equipo de Trabajo
         </h2>
+        <img
+          src="/src/images/servicios/Gerencia/2.jpg"
+          alt="Imagen 2"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Desarrollar un ambiente de seguridad psicológica en el lugar de
           trabajo es indispensable para ser competitivos. Es necesario lograr
@@ -49,16 +56,21 @@ import Layout from '@/layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="flex flex-wrap -mx-4 mt-24">
+    <div class="flex flex-wrap -mx-4 mt-8 lg:mt-24">
       <div class="w-full sm:w-1/2 px-4">
         <img
           src="/src/images/servicios/Gerencia/3.jpg"
           alt="Imagen 1"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Escuchar a mi Equipo de Trabajo
         </h2>
+        <img
+          src="/src/images/servicios/Gerencia/3.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Un líder efectivo, sabe escuchar de verdad a los miembros de su equipo
           para potenciar su productividad. El liderazgo efectivo está muy
@@ -169,15 +181,3 @@ import Layout from '@/layouts/Layout.astro';
     </div>
   </div>
 </Layout>
-
-<style>
-  h1::after {
-    content: '';
-    position: absolute;
-    left: 420px;
-    bottom: -50px;
-    width: 30%;
-    height: 10px; /* Ajusta el valor para el grosor del subrayado */
-    background-color: #fca311; /* Cambia el color del subrayado aquí */
-  }
-</style>

@@ -3,24 +3,29 @@ import Layout from '@/layouts/Layout.astro';
 ---
 
 <Layout title="Servicios">
-  <div class="container mx-auto px-10">
+  <div class="container mx-auto px-5 lg:px-10">
     <h1
-      class="text-5xl font-bold text-center mt-8 relative"
+      class="text-4xl lg:text-5xl font-bold text-center mt-8"
       style="color: #FCA311;"
     >
       CULTURA ORGANIZACIONAL
     </h1>
 
-    <div class="flex flex-wrap -mx-4 mt-24">
+    <div class="flex flex-wrap -mx-4 mt-8 lg:mt-24">
       <div class="w-full sm:w-1/2 px-4">
         <img
           src="/src/images/servicios/Cultura Organizacional/1.jpg"
           alt="Imagen 1"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Cultura Organizacional para Triunfar
         </h2>
+        <img
+          src="/src/images/servicios/Cultura Organizacional/1.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Comprender por qué las organizaciones exitosas van conformando una
           cultura organizacional propia, y evolucionan para prolongar ese éxito
@@ -31,11 +36,16 @@ import Layout from '@/layouts/Layout.astro';
         <img
           src="/src/images/servicios/Cultura Organizacional/2.jpg"
           alt="Imagen 2"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           Ética Organizacional: Construyendo una Cultura de Integridad
         </h2>
+        <img
+          src="/src/images/servicios/Cultura Organizacional/2.jpg"
+          alt="Imagen 2"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Entender por qué para garantizar el éxito a largo plazo de las
           organizaciones en indispensable para enfrentar los desafíos y dilemas
@@ -47,16 +57,21 @@ import Layout from '@/layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="flex flex-wrap -mx-4 mt-24">
+    <div class="flex flex-wrap -mx-4 mt-8 lg:mt-24">
       <div class="w-full sm:w-1/2 px-4">
         <img
           src="/src/images/servicios/Cultura Organizacional/3.jpg"
           alt="Imagen 1"
-          class="w-full mb-4"
+          class="w-full mb-4 hidden lg:flex"
         />
         <h2 class="text-4xl font-bold mb-2" style="color: #FCA311;">
           La Tarea del Cambio Cultural en las Organizaciones en Transformación
         </h2>
+        <img
+          src="/src/images/servicios/Cultura Organizacional/3.jpg"
+          alt="Imagen 1"
+          class="w-full mb-4 lg:hidden flex"
+        />
         <p class="text-lg">
           Todo proceso de cambio en las empresas debe tener una propuesta de
           valor asociada. Para todo gerente es indispensable conocer los
@@ -167,15 +182,3 @@ import Layout from '@/layouts/Layout.astro';
     </div>
   </div>
 </Layout>
-
-<style>
-  h1::after {
-    content: '';
-    position: absolute;
-    left: 420px;
-    bottom: -50px;
-    width: 30%;
-    height: 10px; /* Ajusta el valor para el grosor del subrayado */
-    background-color: #fca311; /* Cambia el color del subrayado aquí */
-  }
-</style>
